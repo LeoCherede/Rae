@@ -20,10 +20,10 @@ body {
 header {
     height: 60px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo do cabeçalho com transparência */
+    background-color: rgba(255, 255, 255, 0.8); 
     position: fixed;
     top: 0;
-    z-index: 1000; /* Garante que o cabeçalho esteja sobreposto */
+    z-index: 1000; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ header ul li a:hover {
 
 .container {
     text-align: center;
-    margin-top: 100px; /* Espaçamento do topo para o conteúdo principal */
+    margin-top: 0px; 
 }
 
 .name h1 {
@@ -61,6 +61,12 @@ header ul li a:hover {
 .name h5 {
     font-size: 20px;
     line-height: 1.5;
+    margin-top: 0px;
+}
+
+.name h6 {
+    font-size: 15px;
+    line-height: 1.5;
     margin-top: 10px;
 }
 
@@ -68,7 +74,23 @@ header ul li a:hover {
     font-size: 35px;
     cursor: pointer;
     animation: blink 1s steps(5, start) infinite;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.bottom-right-text {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.bottom-right-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #000; /* Cor do texto */
 }
 
 @keyframes blink {
@@ -93,7 +115,7 @@ header ul li a:hover {
 @media only screen and (max-width: 600px) {
     /* Ajustes para telas menores, como celulares */
     .container {
-        margin-top: 50px; /* Reduzir o espaçamento do topo em telas menores */
+        margin-top: 0px; /* Reduzir o espaçamento do topo em telas menores */
     }
 
     .name h1 {
