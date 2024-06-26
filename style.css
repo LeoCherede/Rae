@@ -7,26 +7,31 @@
 }
 
 body {
-    background: url('Background.jpg') center center fixed;
+    background: url(./Background.jpg) center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-
+    margin: 0;
 }
 
 header {
     height: 60px;
-    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo do cabeçalho com transparência */
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja sobreposto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header ul {
     list-style: none;
-    font-size: 30px;
-    font-weight: 300;
     display: flex;
-    justify-content: center;
 }
 
 header ul li {
@@ -34,7 +39,9 @@ header ul li {
 }
 
 header ul li a {
-    transition: 300ms;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
 }
 
 header ul li a:hover {
@@ -42,13 +49,9 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-header ul li i {
-    margin-left: 5px;
-}
-
 .container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px; /* Espaçamento do topo para o conteúdo principal */
 }
 
 .name h1 {
@@ -58,6 +61,7 @@ header ul li i {
 .name h5 {
     font-size: 20px;
     line-height: 1.5;
+    margin-top: 10px;
 }
 
 #arrow {
@@ -87,13 +91,24 @@ header ul li i {
 }
 
 @media only screen and (max-width: 600px) {
-    .name h1 {
-        font-size: 30px; /* Reduz o tamanho do título principal */
-    }
-    .name h5 {
-        font-size: 16px; /* Reduz o tamanho do subtítulo */
-    }
+    /* Ajustes para telas menores, como celulares */
     .container {
-        margin-top: 10px; /* Reduz a margem superior */
+        margin-top: 50px; /* Reduzir o espaçamento do topo em telas menores */
+    }
+
+    .name h1 {
+        font-size: 30px; /* Reduzir o tamanho da fonte do título em telas menores */
+    }
+
+    .name h5 {
+        font-size: 16px; /* Reduzir o tamanho da fonte do subtítulo em telas menores */
+    }
+
+    header {
+        height: 50px; /* Reduzir a altura do cabeçalho em telas menores */
+    }
+
+    header ul li {
+        padding: 5px; /* Ajustar o espaçamento dos itens do menu em telas menores */
     }
 }
