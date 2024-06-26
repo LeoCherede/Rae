@@ -9,10 +9,11 @@
 body {
     background: url(./Background.jpg) center center fixed;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 header {
@@ -21,11 +22,11 @@ header {
 }
 
 header ul {
-    font-size: 30px;
     list-style: none;
+    font-size: 30px;
+    font-weight: 300;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 header ul li {
@@ -37,7 +38,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: rgb(216, 187, 22);
+    color: rgb(193, 22, 216);
     text-decoration: underline;
 }
 
@@ -56,7 +57,7 @@ header ul li i {
 
 .name h5 {
     font-size: 20px;
-    line-height: 1.5; /* Adiciona espaçamento entre as linhas */
+    line-height: 1.5;
 }
 
 #arrow {
