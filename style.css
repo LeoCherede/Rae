@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background: url(./Background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 60px;
+    position: relative;
+}
+
+header ul {
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header ul li {
+    padding: 5px 10px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: rgb(216, 187, 22);
+    text-decoration: underline;
+}
+
+header ul li i {
+    margin-left: 5px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name h1 {
+    font-size: 40px;
+}
+
+.name h5 {
+    font-size: 20px;
+    line-height: 1.5; /* Adiciona espaçamento entre as linhas */
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+    margin-top: 20px;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}

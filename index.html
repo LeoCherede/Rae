@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ae4c0fc70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto RAE</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a target="_blank" href="https://wa.me/message/NCJ6I3ET7L4TN1">Whatsapp</a>
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:projetoaulapraquemquer@gmail.com">Email</a>
+                <i class="fa-solid fa-square-envelope"></i>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/rae.reforcoescolar/">Instagram</a>
+                <i class="fa-brands fa-instagram-square"></i>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>RAE</h1>
+                <h5>Reforço e Acompanhamento Escolar <br>Online e Presencial</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Sejam bem-vindos ao RAE</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>
