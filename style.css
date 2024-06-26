@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+
 }
 
 header {
@@ -41,30 +42,29 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-section {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+header ul li i {
+    margin-left: 5px;
 }
 
 .container {
     text-align: center;
+    margin-top: 20px;
 }
 
-.container .name h1 {
+.name h1 {
     font-size: 40px;
 }
 
-.container .name h5 {
+.name h5 {
     font-size: 20px;
+    line-height: 1.5;
 }
 
 #arrow {
     font-size: 35px;
     cursor: pointer;
     animation: blink 1s steps(5, start) infinite;
+    margin-top: 20px;
 }
 
 @keyframes blink {
@@ -84,9 +84,4 @@ section {
 
 .active {
     display: block !important;
-}
-
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
 }
